@@ -1,0 +1,70 @@
+    #caja {
+        position:relative;  /*al poner relative, todos los elementos hijos tendran medidas relativas a este elementoi padre*/
+        height: 100%;
+    }
+
+    #calculadora {
+        display: flex;  /*forma flexible de mostrar el elemento(fácil,de posicionar, a mi parecer)*/
+        width: 97.5%;
+        height: 300px;
+        border-style: double;   /*defin el estilo del borde*/
+        padding: 8px 15px;      /*padding es el margen interior. con los dos valores indican que tendra 8px de margenes inferior y superior, 15px de margenes laterales*/
+        justify-content: center;    /*con justify-content se centran cajas(en este casdo, sera un div)*/
+    }
+
+    button {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .operacion {
+        position:relative;
+        width:100%;
+        height:50%;
+    }
+
+    #campo {
+        position:relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media(min-width:215px){ /*si el tamaño de la pantalla del dispositivo es mayor a 215px de ancho*/
+
+    #centro {
+        width: 100%;
+        height: 45px;
+        text-align: center;
+        background-color: #1fe218;
+        font-family: Arial, verdana;
+        font-size: 25px;
+        margin-bottom: 10px;
+        display: inline-block;
+        padding-top: 8px;
+    }
+
+    span {
+        vertical-align: -15px;  /*AJUSTE CENTRADO DEL ENCABEZADO*/
+    }
+
+    }
+
+    @media(max-width:214px){    /*Si el tamaño de la pantalla del dispositivo es menor a 214px de ancho*/
+    
+    #centro {
+        width: 100%;
+        height: 55px;
+        text-align: center;
+        background-color: #1fe218;
+        font-family: Arial, verdana;
+        font-size: 23px;
+        margin-bottom: 10px;
+        display: inline-block;
+        padding-top: 8px;
+        }
+        
+        span {
+            vertical-align: -20px;  /*AJUSTE CENTRADO DEL ENCABEZADO*/
+        }
+    }
